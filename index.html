@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    
+    <!-- link con bootrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    <!-- link para iconos -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+
+    <!-- animaciones con AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- hoja de estilo -->
+    <link rel="stylesheet" href= "style.css">
+</head>
+<body>
+      <!-- color de fondo en la barra de navegacion -->
+  <style>
+
+  body{ /*tipo de fuente para el body*/   
+      font-family: 'Poppins', sans-serif;
+      color: #bdc1c6; /*color de letras*/
+    }
+    
+    /*Barra de navegacion*/
+    .navbar{
+    background-color: rgba(135, 135, 135, 0);
+    }
+
+    /* color de letras en la barra de navegacion */
+    .navbar-light .navbar-nav .link-item{
+      color:#bdc1c6; /*color de letras en la barra de navegacion*/
+    }
+
+    body{ /*color de fondo*/
+    background-color: #202124;
+    }
+
+    video { 
+      border-bottom:#373737 solid 2px;
+
+    }
+
+    #boton1{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    outline: none;
+    border: none; /*quitar borde del boton*/
+    background-color:rgb(54, 54, 54);/*color de fondo*/
+    color:rgb(255, 255, 255); /*color de la letra*/
+    text-transform: uppercase; /*convertir texto a mayusculas*/
+    cursor: pointer;
+    }
+
+    footer{ /*color de borde superior*/
+      border-top:#373737 solid 2px;
+    }
+  </style>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light p-2 fixed-top">
+        <div class="container-fluid">
+         <a href="index.html"><img src="images/icono.png"  alt=""></a> <!--logo de la barra de navegacion-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!--Boton de tres lineas(movil)-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="item">
+                <a class="link-item active" href="index.html">Inicio</a>
+              </li>
+
+              <li class="item">
+                <a class="link-item" href="cohetes.html">Cohetes</a>
+              </li>
+
+              <li class="item">
+                <a class="link-item" href="#">Acerca de</a>
+              </li>
+
+            </ul>  
+          </div>
+        </div>
+      </nav>
+
+      <!-- Principal/Inicio -->
+      <section id="inicio">
+        <div id="inicio1" class= "container" data-aos="fade-right">
+            <h1>Cohetes Espaciales</h1>
+            <button class="boton2" onclick="window.location.href='cohetes.html'">Ver Ahora</button>
+        </div>
+        <video muted autoplay loop>
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <!-- cohetes -->
+      <section id="new" class="w-100" >
+        <div class="row py-5 m-0">
+          <div class="one col-lg-4 col-md-4 col-6 py-1">
+            <img class="img-fluid" src="images/cohetes/starshipSN20.jpg" alt="">
+            <div>
+              <button  id="boton1" onclick="window.location.href='coheteView.html'">Starship SN20</button>
+            </div>
+          </div>
+          <div class="one col-lg-4 col-md-4 col-6 py-1">
+            <img class="img-fluid" src="images/cohetes/falconHeavy.jpg" alt="">
+            <div>
+              <button id="boton1" onclick="window.location.href= 'coheteView1.html'">Falcon Heavy</button>
+            </div>
+          </div>
+          <div class="one col-lg-4 col-md-4 col-6 py-1">
+            <img class="img-fluid" src="images/cohetes/dragon.jpg" alt="">
+            <div>
+              <button id="boton1" onclick="window.location.href= 'coheteView2.html'">Dragon</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    
+      <section id="fila4-1" class="my-0 pb-3" data-aos="zoom-out-up">
+        <div class="container text-center mt-3 py-0">
+          <h3>NASA</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/nasa/nasa1.jpg" alt="">
+            <h5 class="NombreCohete">Mercury Atlas 6</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/nasa/nasa2.jpeg" alt="">
+            <h5 class="NombreCohete">Saturno V</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/nasa/nasa3.jpg" alt="">
+            <h5 class="NombreCohete">Gemini 7</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/nasa/nasa4.jpeg" alt="">
+            <h5 class="NombreCohete">Transbordador espacial STS</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="fila4-5" class="my-5 pb-5" data-aos="zoom-out-up">
+        <div class="container text-center mt-3 py-0">
+          <h3>SpaceX</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/spaceX/spaceX1.jpg" alt="">
+            <h5 class="NombreCohete">Falcon 9</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="banner1" class="my-5 py5">
+        <div class="container" data-aos="zoom-out-down">
+          <h2>Virgin Galactic </h2>
+          <h4> logra lanzar su primer vuelo tripulado al espacio</h4>
+          <button class="boton2">Ver</button>
+        </div>
+      </section>
+
+      <section id="fila4-2" class="my-5 pb-3" data-aos="zoom-out-up">
+        <div class="container text-center mt-5 py-5">
+          <h3>Virgin Galactic</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/virgin/virgin1.jpg" alt="">
+            <h5 class="NombreCohete">VSS Unity</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="fila4-3" class="my-5 pb-0" data-aos="zoom-out-up">
+        <div class="container text-center mt-5 py-5">
+          <h3>Sierra Nevada Corporation</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/sierraNevada/sierra1.jpg" alt="">
+            <h5 class="NombreCohete">Dream Chaser</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Fila4-4" class="my-5 pb-5" data-aos="zoom-out-up">
+        <div class="container text-center mt-5 py-5">
+          <h3>Blue Origin</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="banner2" class="my-5 py5" >
+        <div class="container" data-aos="fade-right">
+          <h2>SpaceX</h2>
+          <h4>Proximos viajes a Marte?</h4>
+          <button class="boton2">Ver</button>
+        </div>
+      </section>
+
+      <section id="fila4-6" class="my-5" data-aos="zoom-out-up">
+        <div class="container text-center mt-5 py-5">
+          <h3>Boeing</h3>
+          <hr>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6 pb-5">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+          <div class="cohetes text-center col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="images/cohetes/img0.png" alt="">
+            <h5 class="NombreCohete">*Cohete xxxx*</h5>
+            <button class="boton2">Ver</button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Fila de marcas(IMG) -->
+      <section id="brand" class="container" data-aos="fade-down">
+        <div class="row m-0 p-0">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/nasa-logo.png" alt="">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/spacex-logo.png" alt="">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/blueOrigin-logo.png" alt="">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/sierraNevada-logo.png" alt="">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/virgin-logo.png" alt="">
+          <img class="col-lg-2 col-md-4 col-4" src="images/Empresas-IMG/boeing-logo.png" alt="">
+
+        </div>
+      </section>
+        <!-- pie de pagina -->
+      <footer class="footer1 mt-5 py-0">
+        <div class="row container mx-auto pt-5">
+          <div class="footer1 col-lg-3 col-md-4 col-6">
+            <img src="images/icono.png" alt="">
+            <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper laoreet nunc, eu iaculis dolor. </p>
+          </div>
+          <div class="footer1-1 col-lg-3 col-md-4 col-6">
+            <h5 class="py-2">Info</h5>
+            <ul class="list-unstyled">
+              <li class="py-1"><a href="https://www.nasa.gov/" target="_blank">NASA</a></li>
+              <li class="py-1"><a href="https://www.spacex.com/" target="_blank">SpaceX</a></li>
+              <li class="py-1"><a href="https://www.blueorigin.com/" target="_blank">Blue Origin</a></li>
+              <li class="py-1"><a href="https://www.sncorp.com/" target="_blank">Sierra Nevada Corporation</a></li>
+              <li class="py-1"><a href="https://www.virgingalactic.com/" target="_blank">Virgin Galactic</a></li>
+              <li class="py-1"><a href="https://www.boeing.com/" target="_blank">Boeing</a></li>
+            </ul>
+          </div>
+          <div class="footer1-1 col-lg-3 col-md-4 col-6">
+            <h5 class="py-2">Contacto</h5>
+            <div>
+              <h5>Dirección</h5>
+              <p>Name 123, City, COL</p>
+            </div>
+            <div>
+              <h5>Telefono</h5>
+              <p>(123) 010-0123</p>
+            </div>
+            <div>
+              <h5>Correo</h5>
+              <p>Correo@example.com</p>
+            </div>
+          </div>
+          <div class=" footer1-1 col-lg-3 col-md-4 col-6">
+            <div class="row">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/nasa-logo.png" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/boeing-logo.png" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/blueOrigin-logo.png" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/sierraNevada-logo.png" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/spacex-logo.png" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="images/Empresas-IMG/virgin-logo.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="copyright mt-5 py-1 text-center">
+            <p>©2021 | Pagina Prueba</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+
+    <!-- CDN bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); /*iniciar AOS*/
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function(){
+          var nav = document.querySelector("nav");
+          nav.classList.toggle("abajo", window.scrollY>600)
+      })
+    </script>
+    
+    
+</body>
+</html>

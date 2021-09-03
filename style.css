@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{ /*tipo de fuente para el body*/ 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------------------BARRA DE NAVEGACION----------------------------------------------- */
+
+
+nav.abajo{
+    background-color: #242527;  /*color de la barra de navegacion cuando el scroll baja*/
+    border-bottom:#373737 solid 2px;
+}
+
+nav.abajo #navbarSupportedContent > ul > li:nth-child(2) > a,
+nav.abajo #navbarSupportedContent > ul > li:nth-child(3) > a,
+nav.abajo #navbarSupportedContent > ul > li:nth-child(4){
+    color: rgb(255, 255, 255) /*color de letra cuando el scroll baja*/
+}
+
+.navbar-light .navbar-nav .link-item {
+    padding: 0 20px; /*separacion entre los items de la barra de nevegacion*/
+    color:#bdc1c6; /*color de letras en la barra de navegacion*/
+    transition: 0.3s ease;
+    font-size: 1.3rem;
+}
+
+
+.navbar-light .navbar-nav .link-item:hover,
+.navbar i .navbar span:hover, /*cambiar el color de los items cuando el cursor pase por encima*/
+.navbar-light .navbar-nav .link-item.active,
+.navbar i .navbar span.active{
+    color: red;
+}
+
+a.link-item{    /*quitar el subrayado de los items*/
+    text-decoration: none;
+}
+
+
+.navbar i{
+    font-size: 1.2rem;/*escalar tamaño del icono de busqueda*/
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;    
+}
+
+.navbar{
+    font-size: 16px; /*tamaño de la fuente de la barra de navegacion*/
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 44, 44, 0.405);
+}
+
+.navbar span{
+    font-size: 1.2rem;/*escalar tamaño del icono de busqueda*/
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------SECCION DE INICIO------------------------------------------------------ */
+
+#inicio{
+    color: rgb(255, 255, 255); /*cambiar color del texto de la seccion inicio*/
+}
+
+hr{
+    width: 200px;
+    height: 2px; /*linea debajo del titulo*/
+    background-color: rgb(0, 0, 0);
+}
+
+
+#inicio{
+    min-height: 100vh;
+    position: relative;
+}
+#inicio1{
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    margin: auto;
+    padding-top: 300px;
+}
+video{ /*video de fondo*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.boton2{ /*boton Inicio*/
+    font-size: 1.2rem; /*escalar boton*/
+    font-weight: 500;
+    outline: none;
+    border: none; /*quitar borde del boton*/
+    background-color:rgb(54, 54, 54);/*color de fondo*/
+    color:rgb(255, 255, 255); /*color de la letra*/
+    padding: 3px 30px; /*alto y acho (x , y)*/
+    text-transform: uppercase; /*convertir texto a mayusculas*/
+    cursor: pointer;
+    transition: 0.3s; /*tiempo en que cambio de color el boton*/
+}
+.boton2:hover{
+    background-color:dimgrey; /*segundo color del boton*/
+}
+
+/* #new .one .detalles{
+    position: absolute;
+    top: 80%;
+    left: 0 auto;
+    /* background-color:red; color 
+    transform: translateY(10px); 
+    opacity: 0;
+    transition: 0.3s all;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+
+}
+
+#new .one:hover .detalles{ color de fonde cuando se pasa el puntero por encima de la imagen
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.549);
+    transform: translateY(0);
+    opacity: 1;
+    
+} */
+
+
+/*cohetes*/
+.img-fluid{
+    cursor: pointer;
+}
+
+.cohetes .boton2{
+    background-color:red; 
+}
+
+.cohetes:hover .boton2{
+    background-color: #f0a3a3;
+}
+
+#banner1{
+    background-image: url("images/cohetes/virgin.jpg"); /*colocar imagen de fondo*/ 
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centrar boton y texto*/
+    align-items: flex-start;
+    border-top:#373737 solid 2px;
+    border-bottom:#373737 solid 2px;
+}
+
+#banner1 h2{
+    color:rgb(0, 0, 0);
+}
+
+#banner2{
+    background-image: url("images/cohetes/marte.jpg"); /*colocar imagen de fondo*/ 
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centrar boton y texto*/
+    align-items: flex-start;
+    border-top:#373737 solid 2px;
+    border-bottom:#373737 solid 2px;
+}
+
+#banner2 h4 ,h2{ /*colo de letras */ 
+    color:rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------footer---------------------------------------------*/
+
+footer{
+    background-color: #222222;
+}
+
+footer h5{
+    color: #D8D8D8;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer li a{
+    font-size: 0.9rem;
+    color: #D8D8D8;
+}
+
+footer li a:hover{
+    color: #ff0000;
+    text-decoration: none;
+
+}
+
+footer p{
+    font-size: 0.9rem;
+    color: #D8D8D8;
+    margin-bottom: 0rem;
+}
+/*-----------------------------------------------NAVEGACION MOBIL-------------------------------------------- */
+.navbar-light .navbar-toggler{ /*icono de la tres lineas */ 
+    border: none; /*no borde*/
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 255, 0);
+}
+
+/* ------------------------------------------BARRA DE NAVEGACION MOVIL----------------------------------------------- */
+
+#navbarSupportedContent > ul{ /*items*/ 
+    margin: 1rem;
+    align-items:flex-start;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+/*                                                                   Pagina Cohetes                                             */
+/* ____________________________________________________________________________________________________________________________ */
+
+
+/*-------------------- paginado -----------------------------*/
+#fila4-1 > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+    background-color: black; /*color de fondo cuando es selecciondo*/
+    border: none;
+    color: #D8D8D8; /*color de letras y numeros cuando es seleccionado*/
+}
+
+#fila4-1 > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+    background-color: red; /*color de fondo cuando se pasa por encima*/
+    color: white;/*color de letras y numero cuando de pasa por encima*/
+    border: none;
+}
+
+#fila4-1 > div.row.mx-auto.container > nav > ul > li:nth-child(n) >a{
+    color: #ff0000; /*color de letras y numeros */
+}
+
+#imgCabezera img{
+    width: 100%; 
+    height: auto; /*img de cabezera*/
+    margin-bottom: 5rem;
+}
+
+/*__________________________________________________________________________________________________________________________________*/
+/*_______________________________________________________________Pagina coheteView__________________________________________________*/
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;/*separacion entre cada imagen*/
+    cursor: pointer;
+}
+
